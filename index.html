@@ -2,8 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;URL='/ru/services/'" />
   <title>Salt & Pepper</title>
+  <script>
+    var language = window.navigator.userLanguage || window.navigator.language;
+    if( ('' + language).match(/\-RU/) ) {
+      location.replace('/ru/services/');
+    } else {
+      location.replace('/en/services/');
+    }
+  </script>
 </head>
 <body></body>
 </html>
