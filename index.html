@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Salt & Pepper</title>
   <script>
-    var language = window.navigator.userLanguage || window.navigator.language;
-    if( ('' + language).match(/\-RU/) ) {
+    var language = window.navigator.userLanguage || window.navigator.language || 'en-US';
+    if( ('' + language).match(/ru/i) ) {
       location.replace('/ru/services/');
     } else {
       location.replace('/en/services/');
